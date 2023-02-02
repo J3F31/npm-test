@@ -16,4 +16,5 @@ export function TestMesh() {
 export default {
 	helloWorld,
 	goodBye,
+	TestMesh,
 };
