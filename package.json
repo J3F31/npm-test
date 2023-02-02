@@ -1,6 +1,6 @@
 {
   "name": "@j3f3/jero-test",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "test package",
   "main": "index.js",
   "scripts": {
