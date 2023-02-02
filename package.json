@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/J3F31/npm-test/issues"
   },
-  "homepage": "https://github.com/J3F31/npm-test#readme"
+  "homepage": "https://github.com/J3F31/npm-test#readme",
+  "dependencies": {
+    "babylonjs": "^5.45.0"
+  }
 }
