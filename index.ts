@@ -1,4 +1,4 @@
-import { Color3, MeshBuilder, StandardMaterial } from 'babylonjs'
+import { Color3, MeshBuilder, StandardMaterial, Vector3 } from 'babylonjs'
 
 const types = ['sphere', 'cube']
 
@@ -12,7 +12,7 @@ export function goodBye() {
 	return message;
 }
 
-export function TestMesh(name: string, type: string, size: number, scene: any, materialColor: Color3) {
+export function TestMesh(name: string, type: string, size: number, materialColor: Color3, position: Vector3, scene: any) {
 	if (!types.includes(type)) {
 		console.error(`type must be: ${types}`)
 		return
@@ -23,6 +23,7 @@ export function TestMesh(name: string, type: string, size: number, scene: any, m
 	const mat = new StandardMaterial("generatedMat", scene);
 	mat.diffuseColor = materialColor;
 	mesh.material = mat;
+	mesh.position = position;
 	return mesh;
 }
   
