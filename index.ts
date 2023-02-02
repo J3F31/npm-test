@@ -14,9 +14,15 @@ export function TestMesh() {
 	const ball = MeshBuilder.CreateSphere("ball", {diameter: 1}, this.scene);
 	return ball;
 }
+
+export function Some() {
+	const message = 'aa';
+	return message;
+}
   
 export default {
 	helloWorld,
 	goodBye,
 	TestMesh,
+	Some
 };
