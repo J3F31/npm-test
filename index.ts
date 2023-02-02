@@ -19,9 +19,10 @@ export function TestMesh(name: string, type: string, size: number, scene: any, m
 	}
 	const mesh = 
 		type == 'sphere'? MeshBuilder.CreateSphere(name, {diameter: size}, scene) : 
-		type == 'cube'? MeshBuilder.CreateBox(name, {size: size}, scene) : null;
+		type == 'cube'? MeshBuilder.CreateBox(name, {size: size}, scene) : MeshBuilder.CreateBox(name, {size: size}, scene);
 	const mat = new StandardMaterial("generatedMat", scene);
 	mat.diffuseColor = materialColor;
+	mesh.material = mat;
 	return mesh;
 }
   
