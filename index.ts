@@ -12,7 +12,7 @@ export function goodBye() {
 	return message;
 }
 
-export function TestMesh(name: string, type: string, size: number, materialColor: Color3, position: Vector3, scene: any) {
+export function TestMesh(name: string, type: string, size: number, materialColor: Color3, position: [number, number, number], scene: any) {
 	if (!types.includes(type)) {
 		console.error(`type must be: ${types}`)
 		return
