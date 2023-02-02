@@ -1,4 +1,4 @@
-import { MeshBuilder } from 'babylonjs'
+import { MeshBuilder, Scene } from 'babylonjs'
 
 export function helloWorld() {
 	const message = 'Hello World from my example modern npm package!';
@@ -10,8 +10,8 @@ export function goodBye() {
 	return message;
 }
 
-export function TestMesh() {
-	const ball = MeshBuilder.CreateSphere("ball", {diameter: 1}, this.scene);
+export function TestMesh(name: string, diameter: number, scene: Scene) {
+	const ball = MeshBuilder.CreateSphere(name, {diameter: diameter}, scene);
 	return ball;
 }
 
