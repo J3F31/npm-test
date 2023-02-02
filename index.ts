@@ -7,6 +7,11 @@ export function goodBye() {
 	const message = 'Goodbye from my example modern npm package!';
 	return message;
 }
+
+export function TestMesh() {
+	const ball = MeshBuilder.CreateSphere("ball", {diameter: 1}, this.scene);
+	return ball;
+}
   
 export default {
 	helloWorld,
