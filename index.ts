@@ -23,7 +23,7 @@ export function TestMesh(name: string, type: string, size: number, materialColor
 	const mat = new StandardMaterial("generatedMat", scene);
 	mat.diffuseColor = materialColor;
 	mesh.material = mat;
-	mesh.position = position;
+	mesh.position = new Vector3(position[0], position[1], position[2]);
 	return mesh;
 }
   
