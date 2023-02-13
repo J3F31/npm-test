@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/J3F31/npm-test#readme",
   "dependencies": {
+    "@babylonjs/core": "^5.46.0",
     "babylonjs": "^5.45.0"
   }
 }

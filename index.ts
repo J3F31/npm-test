@@ -12,18 +12,17 @@ export function goodBye() {
 	return message;
 }
 
-export function TestMesh(name: string, type: string, size: number, materialColor: Color3, position: [number, number, number], scene: any) {
+export function TestMesh(name: string, type: string, size: number, material: StandardMaterial, position: Vector3, scene: any) {
 	if (!types.includes(type)) {
 		console.error(`type must be: ${types}`)
 		return
 	}
 	const mesh = 
 		type == 'sphere'? MeshBuilder.CreateSphere(name, {diameter: size}, scene) : 
-		type == 'cube'? MeshBuilder.CreateBox(name, {size: size}, scene) : MeshBuilder.CreateBox(name, {size: size}, scene);
-	const mat = new StandardMaterial("generatedMat", scene);
-	mat.diffuseColor = materialColor;
-	mesh.material = mat;
-	mesh.position = new Vector3(position[0], position[1], position[2]);
+		type == 'cube'? MeshBuilder.CreateBox(name, {size: size}, scene) : null;
+	const mat = material;
+	mesh!.material = mat;
+	mesh!.position = position;
 	return mesh;
 }
   
