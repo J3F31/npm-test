@@ -1,4 +1,4 @@
-import { Color3, MeshBuilder, PBRMaterial, StandardMaterial, Vector3 } from 'babylonjs'
+import { Color3, MeshBuilder, PBRMaterial, StandardMaterial, Vector3 } from '@babylonjs/core'
 
 const types = ['sphere', 'cube']
 
