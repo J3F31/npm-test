@@ -1,0 +1,23 @@
+{
+    "name": "@j3f3/npm-test",
+    "version": "0.0.0",
+    "description": "test package",
+    "main": "./src/index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/J3F31/npm-test.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/J3F31/npm-test/issues"
+    },
+    "homepage": "https://github.com/J3F31/npm-test#readme",
+    "dependencies": {
+      "@lastolivegames/becsy": "^0.14.3"
+    }
+}
